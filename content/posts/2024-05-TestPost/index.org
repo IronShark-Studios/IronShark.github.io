@@ -1,5 +1,5 @@
-#+title: Digital Art with NixOS
-#+date: 2023-01-15
+#+title: Test Post
+#+date: 2024-05-15
 #+categories[]: Art
 #+tags[]: Digital_Art, Linux NixOS, Art_for_Beginners
 
