@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nix, on IronShark</title>
-    <link>http://localhost:1313/tags/nix/</link>
-    <description>Recent content in Nix, on IronShark</description>
+    <title>Nix on IronShark</title>
+    <link>https://IronShark-Studios.github.io/tags/nix/</link>
+    <description>Recent content in Nix on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/tags/nix/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>One File System Configuration with NixOS and Emacs Org-Mode</title>
-      <link>http://localhost:1313/posts/2023-01-onefileconfiguration/</link>
-      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      <title>Using NixOS for Art</title>
+      <link>https://IronShark-Studios.github.io/posts/2023-01-wacomonlinux/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-onefileconfiguration/</guid>
-      <description>Introduction This article describes my attempts to create a set of https://leanpub.com/lit-config/read. With each file containing all the settings and customizations I use for a machine in a single location.</description>
+      <guid>https://IronShark-Studios.github.io/posts/2023-01-wacomonlinux/</guid>
+      <description>TODO Art-180 With the start of the new year come New Years resolutions. This year mine is to start doing art on a regular basis. While I have some expirence with painting, my interest is sculpture.</description>
+      
+    </item>
+    
+    <item>
+      <title>NixOS First Impressions</title>
+      <link>https://IronShark-Studios.github.io/posts/2023-01-nixosfirstimpressions/</link>
+      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://IronShark-Studios.github.io/posts/2023-01-nixosfirstimpressions/</guid>
+      <description>As someone who is still trying to break into the world of Linux Power Users, System Admins, and Programmers. I have often found myself needing to reinstall my operating system.</description>
       
     </item>
     

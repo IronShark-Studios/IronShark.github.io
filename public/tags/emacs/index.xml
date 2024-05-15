@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emacs on IronShark</title>
-    <link>http://localhost:1313/tags/emacs/</link>
-    <description>Recent content in Emacs on IronShark</description>
+    <title>Emacs, on IronShark</title>
+    <link>https://IronShark-Studios.github.io/tags/emacs/</link>
+    <description>Recent content in Emacs, on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>One File System Configuration with NixOS and Emacs Org-Mode</title>
-      <link>http://localhost:1313/posts/2023-01-onefileconfiguration/</link>
-      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      <title>Diving into Emacs with EXWM</title>
+      <link>https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-onefileconfiguration/</guid>
-      <description>Introduction This article describes my attempts to create a set of https://leanpub.com/lit-config/read. With each file containing all the settings and customizations I use for a machine in a single location.</description>
-      
+      <guid>https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/</guid>
+      <description>Introduction In my experience, every hobby has a few core… disagreements. Usually these are small and relatively benign differences based on personal preference, with members of that community advocating for their prefered solution.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/featured.jpg" />
     </item>
     
   </channel>

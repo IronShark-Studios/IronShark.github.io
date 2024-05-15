@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux, on IronShark</title>
-    <link>http://localhost:1313/tags/linux/</link>
-    <description>Recent content in Linux, on IronShark</description>
+    <title>Linux on IronShark</title>
+    <link>https://IronShark-Studios.github.io/tags/linux/</link>
+    <description>Recent content in Linux on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Diving into Emacs with EXWM</title>
-      <link>http://localhost:1313/posts/2023-01-emacswithexwm/</link>
-      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      <title>Digital Art with NixOS</title>
+      <link>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-emacswithexwm/</guid>
-      <description>Introduction In my experience, every hobby has a few core… disagreements. Usually these are small and relatively benign differences based on personal preference, with members of that community advocating for their prefered solution.</description>
+      <guid>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</guid>
+      <description>TLDR This article describes how I have configured my Linux workstation using NixOS to learn the basics of digital art. Including installing Krita, and managing it&amp;#39;s config files. Configuring a user input devices, and managing completed projects with git.</description>
+      
+    </item>
+    
+    <item>
+      <title>A Linux Journey Retrospective</title>
+      <link>https://IronShark-Studios.github.io/posts/2023-01-linuxjourneyretrospective/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://IronShark-Studios.github.io/posts/2023-01-linuxjourneyretrospective/</guid>
+      <description>As a part of writing the &amp;#34;https://ironshark.org/technology/2022/09/04/linux-journey.html&amp;#34; article, and my larger project of switching to https://nixos.org/ for daily use. I decided to go through all of the https://linuxjourney.com/ lessons again.</description>
       
     </item>
     
