@@ -1,0 +1,73 @@
+#+date: 2022-12-17
+#+title: Using NixOS for Art
+#+categories[]: Technology
+#+tags[]: Digital_Art, Linux, Nix
+#+series[]: Art-180
+
+* TODO
+* Art-180
+With the start of the new year come New Years resolutions. This year mine is to start doing art on a regular basis. While I have some expirence with painting, my interest is sculpture. I also want to establish a strong foundation in art fundamentals. So with that in mind, I am going to start with drawing. More specifically I am going to follow the lessons laid out in the book [The Natural Way to Draw](https://www.goodreads.com/book/show/3061.The_Natural_Way_to_Draw). With one major change. I plan on doing the lessons digitally, specifically using an open source program called [Krita](https://krita.org/en/), and a [Wacom Intuos Pro](https://estore.wacom.com/en-US/wacom-intuos-pro-l-us-pth860.html). I am calling this project [Art-180](https://github.com/Iron-Shark/Art-180), and I hope to publish all of the art I create during this project on my [GitHub](https://github.com/Iron-Shark). In an attempt to show the real time progression of a total novice, over 6 months of organized practice. I also plan to to create one "finished work" on the weekend which will be published on this blog, along with a short recap of the weeks exercises, summary of any highlights, and generally my thoughts on things are progressing.
+
+This article focuses on how I have configure my workstation to support this project. Including my Krita, Tablet, and any general Operating System configurations that are relevant.
+
+** System Configuration
+As usual installing programs with Nix is easy. I simply add them to my packages list in [[vortex.org][https://github.com/Iron-Shark/Technonomicon/blob/main/vortex.org]]. [[Krita][https://krita.org/en/]] is my preferred art program. It's free, fully featured, and open source with a strong contributor community.
+#+begin_src nix
+home.package = with pkgs; [
+krita
+wacomtablet
+];
+#+end_src
+
+** Tablet Configuration
+Again using Nix to manage things. This time, I use home-manager to create a file that holds a script. Which binds all of my wacom express keys to specific actions. This script also has a system alias, since the tablet needs to be plugged in on start up for the script to work.
+
+#+begin_src nix
+  home.file."wacom-tablet-bindings.sh" = {
+    target = ".config/system-scripts/wacom-tablet-bindings.sh";
+    executable = true;
+    text = ''
+      #!/bin/bash
+
+      ## Upper group of exprss keys
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 1 "key tab"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 3 "key +control s -control"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 2 "key insert"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 8 "key alt"
+
+      ## Center Button
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 13 "key +control z -control"
+      ### This configuration leaves the default zoom-in/out touch ring bindings
+
+      ## Lower group of express keys
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 9 "key +shift"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 10 "key +control"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 11 "key +t"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 12 "key +b"
+
+
+      ## Pen Controls
+      xsetwacom set "Wacom Intuos Pro L Pen stylus" Button 3 "Key +e" # Toggles eraser mode on/off
+      xsetwacom set "Wacom Intuos Pro L Pen eraser" Button 1 "key +p" # Horizontally mirrors canvas <- Rebind this to something else. I dont like the eraser key
+    '';
+  };
+#+end_src
+
+Since I use EXWM as my window manager, I have Emacs run the script as a shell command on system start up.
+
+#+begin_src emacs-lisp
+(start-process-shell-command "Wacom Tablet Start" "*Messages*" "bash ~/.config/system-scripts/wacom-tablet-bindings.sh")
+#+end_src
+
+** Krita Configuration
+Here is where things get a little more complicated. I am still using Nix to manage my Krita files, and that work as you would expect. There is one fairly significant downside though. Since Krita primarily uses its own GUI for configuration changes. Any changes made in the program will not be reflect back into the template file in [[Technonomicon][https://github.com/Iron-Shark/Technonomicon]], and those changes will be overwritten the next time you run =nixos-rebuild switch=. The solution to this is simple, manually update the template file by copying the changes from =.config/kritarc=. Long term, once I have my settings mostly figured out. I doubt that this will be an issue at all, but it is less than perfect. Especially right now at the start when I am going to be frequently changing my settings.
+
+#+begin_src nix
+  home.file."kritarc" = {
+    source = ./Krita/kritarc;
+    target = ".config/kritarc";
+  };
+#+end_src
+
+* Conclusion
+Generally I am super happy with this set up. Needing to manual copy the Krita configuration files is a bit of an inconvenience, but a very temporary one. As usually with things like this, I end up making a lot of changes in the beginning and then only occasional changes after that. Krita being free is a huge benefit as it massively lowers the bar to entry compared to Photoshop. Generally I am looking forward to starting this project.

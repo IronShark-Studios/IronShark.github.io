@@ -1,0 +1,98 @@
+#+date: 2022-12-22
+#+title: Diving into Emacs with EXWM
+#+categories[]: Technology
+#+tags[]: Linux, Emacs, Keyboard_Centric_Workflow
+
+* Introduction
+
+  In my experience, every hobby has a few core... disagreements. Usually these are small and relatively benign differences based on personal preference, with members of that community advocating for their prefered solution. Among programmers, text editor of choice is one of the more prominent ones. Vim, Visual Studio Code, Emacs, or any other solution you can imagine will have its own dedicated group of supporters. This post will discuss my preferred solution, and some of the features that make me choose it over other options.
+
+* "A great operating system, lacking only a good text editor".
+
+  These are words often lobbed jokingly at Emacs users, I ironically agree. While definitely not an operating system, Emacs really starts to come into its own when you view it as a 'productivity environment'. Rather than a simple text editor. Most of what I do with a computer involves text manipulation. Programming, email, discord/slack, web browsing, are all basically the same task. Each wrapped in a custom interface. Emacs gives me the ability to integrate all of these tasks into a single user interface, including shared shortcuts, hotkeys, and the use of macros or other programmatic interfaces provided by Emacs. This post is going to be the first in a series documenting my attempt to create a computer workflow that focuses on avoiding use of a mouse. Instead making use of these keyboard hotkeys, and shortcuts.
+
+* EXWM, EVIL, and PolyBar
+
+  To start with I wanted to discuss some terminology. Most of what someone interacts with, when using a computer is a part of the "display environment". Some operating systems can be configured to use one of several display environments, or something known as a "window manager". Which performs a similar function to a display environment though in a much more minimal way. Window managers generally do not include things like wifi managers, volume or brightness controls, or other GUI (graphical user interface) applications to configure the system. Tiling window managers, take this minimalism further by removing the need to use a mouse to position application windows. Instead locking them together as part of a larger grid, and using hotkeys to adjust how the screen is divided among these tiles. EXWM (Emacs X Window Manager) is one such tiling window manager.
+
+  EXWM is an Emacs package that I installed using straight.el. A functional package manager internal to Emacs. It uses the Emacs-Daemon to contain other applications inside an Emacs Frame. Allowing you to use your normal Emacs inputs to interact with non-Emacs programs. This includes rearranging windows, copy, paste, registers, and more generally it homogenizes how I interact with a variety of programs. Eventually, I plan to further extend this with applications like Xkey-snail. Which allows you to mask non-Emacs hot-keys under Emacs Commands. Currently the one major downside of EXWM is that Emacs is single threaded. Meaning that performing certain operations can freeze your entire system until that operation has completed. However there is an ongoing project to update Emacs to multi-threading, and I have not actually encountered a lock up in real world use.
+
+  Visually EXWM is hugely customizable. Currently in addition to the Emacs Mode-Line displaying file specific information at the bottom of each buffer. I use PolyBar to display system wide information, like which workspace is currently active, RAM and CPU usage, and the date and time. Configuring PolyBar to match my Emacs theme was easy, and while I still have a lot I would like to do to further refine both. I was able to get something visually pleasing, and functional in just a couple of hours of tinkering.
+
+[[Screenshot of my default EXWM workspace][https://github.com/Iron-Shark/Iron-Shark.github.io/blob/main/_assets/Banners/deskTop.png?raw=true]]
+An example screenshot of my Desktop
+
+ I wanted to address one other thing as a part of this post. Text editing with Emacs. Now as I said earlier, I largely agree that Emacs on it's own, is not the best choice of text editor. I find the Emacs chord system to be a bit clunky for the most commonly used text editing commands, and honestly I think modal editing as offered by Vim is better... So thats what I use. Emacs EVIL (Extensible VI Layer), adds modal inputs to the normal Emacs text editing modes. For me this is the perfect solution, as it allows me to use the modal inputs for the most commonly used commands that often need to be used multiple times or in multiple combinations in quick succession. While still having the Emacs key chords, and longer form 'M-x' style input for less commonly used, or system level commands.
+
+* Final Thoughts
+
+  I still have a ton of work left to get everything to how I ultimately want it to be, but I hope this process shows one of the greatest strengths of both Linux, and Emacs. Extensibility. The ability to configure, or even replace some of the core functionality of a piece of software so that it works in a way that is specifically beneficial to me and my workflow. I will admit though that this process is not necessarily beginner friendly. While the Linux community has made huge inroads towards being more usable by non-technical people, this level of customization can still take a significant amount of work. Reading documentation, troubleshooting conflicts caused by changes, or even just learning what you actually need the software to do, and how to get it to do it. All of these will take time, but in my opinion are absolutely worth the effort.
+
+  If you are interested in trying a setup like this for yourself, consider checking out my posts with the "Linux for beginners" tag to see how you can get a Linux VM running with very little effort on a Windows computer. If you are specifically interested in EXWM, I would strongly recommend getting experience with normal Emacs first. While WSL does not support EXWM, it can be used to learn the core Emacs Usage. Lastly, if you are interested in learning more about EVIL or Modal editing, I suggest checking out the tutor built into Vim, or Doom Emacs. Which is a preconfigured version of Emacs that includes EVIL and simplifies a lot of basic configuration. Links found Below.
+
+* Resources
+** Config Files
+  - [[Link to my dotfile repo][https://github.com/Iron-Shark/Technonomicon]] Show my complete current configuration.
+
+  - [[NixOS Download Link][https://nixos.org/]]
+  - Adding this to =Configuration.nix= enables EXWM.
+#+begin_src nix
+      services.xserver.displayManager.lightdm.enable = true;
+      services.xserver.windowManager.exwm.enable = true;
+#+end_src
+
+  - [[EXWM Download Link][https://github.com/ch11ng/exwm]]
+  - [[EVIL Mode Download Link][https://github.com/emacs-evil/evil]]
+  - Adding this to =init.el= enables Evil Mode and EXWM, this assumes use of Straight.el package manager and Use package.
+#+begin_src emacs-lisp
+    (server-start)
+
+    (use-package exwm
+    :init
+    :config
+    (setq exwm-workspace-show-all-buffers t)
+    (setq exwm-layout-show-all-buffers t)
+
+    (add-hook 'exwm-update-class-hook
+    (lambda ()
+    (exwm-workspace-rename-buffer exwm-class-name)))
+
+    (with-eval-after-load 'evil
+    (evil-set-initial-state 'exwm-mode 'motion))
+
+    ;; do not forward anything besides keys defined with
+    ;; `exwm-input-set-key' and `exwm-mode-map'
+    (setq exwm-input-prefix-keys '())
+
+    (exwm-enable))
+
+
+    (use-package evil
+    :init
+    (setq evil-want-integration t
+    evil-want-keybinding nil
+    evil-want-C-u-scroll t
+    evil-want-C-i-jump nil
+    evil-respect-visual-line-mode t
+    evil-undo-system 'undo-tree)
+    :config
+    (evil-mode 1)
+    (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
+    (define-key evil-insert-state-map (kbd "C-h") 'evil-delete-backward-char-and-join))
+
+    (use-package evil-collection)
+
+    ; Replaces the Default Undo System.
+    (use-package undo-tree)
+    (global-undo-tree-mode 1)
+#+end_src
+
+** Download Links
+  - [[Emacs][https://www.gnu.org/software/emacs/]]
+  - [[DoomEmacs][https://github.com/doomemacs/doomemacs]]
+  - [[PolyBar][https://github.com/polybar/polybar]]
+
+** Other Useful Programs
+  - [[Unclutter][https://wiki.archlinux.org/title/unclutter]] Application that hides your cursor when not moving the mouse.
+  - [[Xkeysnail][https://aur.archlinux.org/packages/xkeysnail]] Application that allows you to remap key commands for programs.
+  - [[Xmonad][https://xmonad.org/]] My preferred non-EXWM tiling window manager, if you are intered in trying on out.

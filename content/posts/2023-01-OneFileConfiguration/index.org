@@ -1,0 +1,116 @@
+#+date: 2022-12-28
+#+title: One File System Configuration with NixOS and Emacs Org-Mode
+#+categories[]: Technology
+#+tags[]: Linux, Nix, Emacs
+* Introduction
+This article describes my attempts to create a set of [[literate configuration files][https://leanpub.com/lit-config/read]]. With each file containing all the settings and customizations I use for a machine in a single location. In the hope that the highly documented nature of literate programming will allow better understanding and long term maintainability.
+
+Additionally configuration files are often shared, or used as teaching tools. Ultimately my goal is for a non-programmer to be able to look through my configuration and understand what the pieces are doing. Even if they do not understand the programming language they are written in. To do this I am using a combination of the tools discussed below.
+
+** Nix
+I have been using NixOS for around four months, and have transitioned my primary workstation fully to the trifecta of [[NixOS][https://nixos.org/]], [[Nix Flakes][https://nixos.wiki/wiki/Flakes]], and [[Nix Home-manager][https://nixos.wiki/wiki/Home_Manager]]. This article wont this won't discuss Flakes much as in this situation the Flake deals more with managing the repository that holds the collection of multiple configuration files. Eg. The [[Technonomicon Flake][https://github.com/Iron-Shark/Technonomicon]] contains both, the Vortex, and Voyager (still to be developed) single file configurations.
+
+NixOS supports the use of a declaratively configuration file, and Home-manager extends this further allowing you to manage the configuration of applications declaratively even if they do not normally support doing so. For those not familiar. [[Declarative programming][https://www.wikiwand.com/en/Declarative_programming]] is the process of describing the final result that the program should produce, rather than the steps the computer should use to produce it. This makes a system using these to applications uniquely suited to this type of One File System layouts. These benifits manifest in a few major features.
+
+- configuration.nix : By default NixOS supports a single centralized configuration file. This can be used manage most of the core systems level configuration options. Including Device Drivers and Services, System Language and Location, Users, and Security Permissions. It also allows you to specify a set of packages that will be available to all users.
+
+- que.nix : Standard NixOS supports installing user specific packages as part of the configuration.nix file mentioned previously. However if you are using home-manager, from what I understand. It is generally considered best practice to separate all user related instructions into their own file. I name these after the user they are written for. Importantly in addition to allowing you to specify what packages should be installed, home-manger allows you to manage those applications.
+
+The uses of home-manager include :
+- Replacing application specific dot files with home-manger options.
+
+This code replaces both the normal .gitconfig file, and the global .gitignore file.
+#+begin_src nix
+programs.git = {
+package = pkgs.gitFull;
+enable = true;
+userName = "Que";
+userEmail = "git@ironshark.org";
+ignores = [
+  "*~"
+  ".*~"
+  "'#*#'"
+  ".*.swp"
+  ];
+};
+#+end_src
+
+- The ability to create a file in the users directory, to be used by other applications.
+
+This file can be used by another application. I prefer this over a normal symlink, becuase it places the file in the nix store. Removing the need to always have the source repository in the same location.
+#+begin_src nix
+home.file."polybar-CPU-temp.sh" = {
+  target = ".config/polybar/polybar-CPU-temp.sh";
+  executable = true;
+  text = ''
+    #!/bin/sh
+
+    sensors | grep "Package id 0:" | tr -d '+' | awk '{print $4}'
+  '';
+};
+#+end_src
+
+- The ability to copy entire directories into the users home directory.
+
+I use this to place my Emacs configuration in my home directory, since it consists of several files and would be unwieldly to convert to Nix.
+#+begin_src nix
+home.file."emacs" = {
+  source = ./Emacs;
+  recursive = true;
+  target = ".config/emacs";
+};
+#+end_src
+
+** Emacs & Org
+[[Emacs][https://www.gnu.org/software/emacs/]] and [[Org-Mode][https://orgmode.org/]] are the core of this project. Org-Mode is a Mark Up extension for Emacs. Supporting the use of multiple levels of sub-headings, hyperlinks, and more. Including embedded code blocks, and exporting those code blocks to external files. This process is called [[tangling][https://orgmode.org/manual/Working-with-Source-Code.html]] the file. It can be configured so that all the code blocks below a specific heading will go to the same target file. This, is the central design pattern of a single file configuration. Each Target file is tied to a heading level, with the headings below them describing the functions of the code contained by them.
+
+- To add a tangle target to a heading. You would use this code this sytle of properties block. Ignore the leading single quotes.
+
+#+begin_src org
+'* Example Heading
+':PROPERTIES:
+':header-args: :tangle ~/path/to/target
+':END:
+#+end_src
+
+- Then Use a normal Org-src block as shown below. I put this at the top of all my tangled files. Note: This warning is commented with # for nix. Ignore the leading single quotes.
+
+#+begin_src org
+'#+begin_src nix
+'# WARNING : This file was generated by vortex.org
+'# DO NOT MODIFY THIS FILE!
+'# Any changes made here will be overwritten.
+'#+end_src
+#+end_src
+
+
+- When put together the whole thing looks like this. With all of the sub-heading being tangled to the same target file, specified in the top level heading. Ignore the leading single quotes.
+
+#+begin_src org
+'* Example Heading
+':PROPERTIES:
+':header-args: :tangle ~/path/to/target
+':END:
+'** Tangled File Warning
+'#+begin_src nix
+'# WARNING : This file was generated by vortex.org
+'# DO NOT MODIFY THIS FILE!
+'# Any changes made here will be overwritten.
+'#+end_src
+'** Other Sub-Heading 1
+'Normal Text goes here.
+'** Other Sub-Heading 2
+#+end_src
+
+Any nomral text not included in the SRC-Blocks will not be tangled to the target file.
+
+- Tangling files can be done with either =M-x org-babel-tangle=, or it's default hot key of =C-c C-v t=.
+
+* Why use a single file configuration
+In addition to the benefits inherent with [[literate programming][https://www.wikiwand.com/en/Literate_programming]], this layout allows me to  simplify the management of several files preforming similar functions. Rather than needing to move through an entire sub-directory within the flake repository. All of the files can be accessed and modified from the machine-name.org file. It also ties my Emacs configuration to my NixOS system generation in a meaningful way, something I would like to continue integrating. Also having a centralized "single source of truth". Helps to make finding specific configuration options easier, and prevent duplicated or conflicting settings.
+
+Overall while there are definately more issues to be worked out. I am hopefull that this will be a worth while investment going forward.
+
+
+* Resources
+- [[My Configurations GitHub Repository][https://github.com/Iron-Shark/Technonomicon]]

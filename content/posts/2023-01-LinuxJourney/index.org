@@ -1,0 +1,23 @@
+#+date: 2022-09-04
+#+title: A beginners doorway to Linux.
+#+categories[]: Technology
+#+tags[]: Linux, Linux_for_beginners
+
+Linux based operating systems, including Debian, Arch, and NixOS are being used by an increasing number of people without a technical background. These operating systems have a reputation of requiring a high level of knowledge simply to perform common user actions, making them somewhat unapproachable for the beginner. The common wisdom given to someone who wants to begin learning how to use a Linux based system is to install it on a spare computer, or to dual boot your current computer. In my experience neither of these options do a great job of creating a friendly learning environment.
+
+The problem that I experienced with both of these methods is that simply starting to practice required time and effort that often deterred me from actually doing so. Once practicing I was completely locked out of my normal operating system and the tools I was used to using with Windows OS. I often found myself frustrated and quitting after only a small amount of practice. Having found myself "locked" in an operating system I could barely get to function. As a non-tech user diving into the terminal was overwhelming. The solution in my case came from an unexpected source, Windows Subsystem for Linux.
+
+Windows Subsystem for Linux commonly referred to as WSL and, WSL2 it's more fully featured successor provide what I believe was the key to my successfully learning the core skills required by Linux based operating systems. Ease of practice. I was suddenly able to use a Linux terminal in my normal Windows workspace, and treat it as I would any other tool. I could have it open in the background and dedicate short busts of time to learning the basics, while using my already configured Windows tools to search for answers to problems, and take notes. Then as I became more comfortable, I was able to use Remote Desktop Protocol (RDP) to do the same with a full virtual machine.
+
+The other tool that really helped me was the website LinuxJourney.com . This site provides a solid foundation of knowledge, and an easy to follow path to progress through. While using WSL2 to practice the commands as I learned them. Together these simplified things enough that it felt easy to practice, and I quickly felt comfortable enough to make the jump to a full time Linux desktop.
+
+ The key was I didn't need any knowledge of these things prior to this to set it up. It can be overwhelming to a novice to be confronted with a new subject and get stuck in a loop of "if I want to learn this, then I need to learn that first". I will link the used guides below, but it was all extremely simple for a normal Windows user. I think the ability for a non-power user to follow simple guides to set something like this up, and be able to practice is what makes WSL such a great tool for people looking to learn more about Computer Science, Programming, or System Administration.
+
+
+* Resources
+These are the resources I found most helpfull while going through this process.
+
+- [[Linux Journey][https://linuxjourney.com]] : A great tutorial website I used to learn the basics of Linux.
+- [[WSL Documentation][https://docs.microsoft.com/en-us/windows/wsl/install]] : Windows Documentation on WSL.
+- [[WSL set up guide][https://www.youtube.com/watch?v=_fntjriRe48]] : Video guide for first time configuration of WSL.
+- [[WSL RDP guide][https://www.youtube.com/watch?v=IL7Jd9rjgrM&t=182s]] : Video guide for setting up a RDP connection.

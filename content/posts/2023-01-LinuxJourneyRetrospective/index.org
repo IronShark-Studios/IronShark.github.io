@@ -1,0 +1,10 @@
+#+date: 2022-09-04
+#+title: A Linux Journey Retrospective
+#+categories[]: Technology
+#+tags[]: Linux_for_beginners, Linux
+
+As a part of writing the "[[A beginners doorway to Linux][https://ironshark.org/technology/2022/09/04/linux-journey.html]]" article, and my larger project of switching to [[NixOS][https://nixos.org/]] for daily use. I decided to go through all of the [[Linux Journey][https://linuxjourney.com/]] lessons again. This time from the perspective of someone familiar with the fundamentals, and experienced with basic use of a Linux based operating system. For perspective I have basic user experience with both [[Debian][https://www.debian.org/]] and [[Arch][https://archlinux.org/]], and have used both as my primary operating system.
+
+My overall impression remains that it is a great resource. I wanted to add an additional caveat to that though. If you are simply trying to get your feet wet, or do simple interactions with a Linux machine that is maintained for you. Then it is likely enough to give you the skills needed to interact with a preconfigured system. If however you are trying to configure a personal computer, or build a set of tools for professional projects. Then you are definitely going to need an additional resource, namely. Your chosen distribution's user manual.
+
+I mention this specifically because it is something that could be easily overlooked or misunderstood by someone coming from a Windows OS background. This is due to the fact that Linux is only the core of the operating system. So fittingly Linux Journey really only discusses the Linux core utilities that are found on almost all distributions, with only a passing mention of the differences between them. It will teach how to use the tools that come with Linux, but not what to do with those tools to achieve your goals. Overall, I'm glad I went through the tutorials again. I feel like I picked up a bit more information now that I have the context to appreciate, and my opinion overall is the same. Linux Journey is an excellent resource. Just make sure that you are also consulting your chosen disto's user manual, FAQ's, and tutorials.

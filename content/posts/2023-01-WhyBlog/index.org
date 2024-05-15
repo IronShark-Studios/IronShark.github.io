@@ -1,0 +1,12 @@
+#+date: 2022-09-04
+#+title: Who, what, and Why. Creating a personal blog.
+#+categories[]: Personal
+#+tags[]: Site_Update
+
+Personal blogging can take a lot of forms, and the goals for each site can vary wildly from person to person. For me, those goals are.
+
+*Create a public facing outlet for written works.* This isn't to say that I expect this blog to become wildly popular. I don't. Rather the "threat" of unknown people seeing what I have written encourages me to try and publish things in a finished state. Having never really needed to do that before I hope that this will improve my writing, storytelling, and general communication skills. Largely it amounts to a creative writing exercise.
+
+*Share project reports, and the lessons learned from them.* In the hopes that others can one day avoid the mistakes I make as part of my learning process. More generally, I hope that the process of creating these reports will encourage me to better document my projects for later reference, and to be able to share that information with friends and collaborators. Also having a measurable sense of progress on those projects could be a great source of motivation.
+
+*Create a personal & professional gallery of completed work.* This is a longer term goal, but as I complete more projects. I hope to begin curating them into a gallery or portfolio highlighting my major achievements. The overall goal being that the contents of my about me page, which should also include a CV will act as an introduction to my body of work.
