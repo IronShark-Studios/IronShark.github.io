@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://IronShark-Studios.github.io"
+baseURL = "https://Xin_IronShark.github.io"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
