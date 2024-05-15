@@ -36,6 +36,7 @@
               shellHook = ''
             mkdir -p themes
             ln -sn "${hugo-theme}" "themes/blowfish"
+            git submodule add "${hugo-theme}" "themes/testfish"
           '';
             };
           }
