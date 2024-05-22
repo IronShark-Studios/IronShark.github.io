@@ -2,88 +2,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IronShark</title>
-    <link>https://IronShark-Studios.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
     <item>
       <title>Digital Art with NixOS</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</link>
+      <link>http://localhost:1313/posts/2023-01-artonlinux/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</guid>
+      <guid>http://localhost:1313/posts/2023-01-artonlinux/</guid>
       <description>TLDR This article describes how I have configured my Linux workstation using NixOS to learn the basics of digital art. Including installing Krita, and managing it&amp;#39;s config files. Configuring a user input devices, and managing completed projects with git.</description>
       
     </item>
     
     <item>
       <title>One File System Configuration with NixOS and Emacs Org-Mode</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-onefileconfiguration/</link>
+      <link>http://localhost:1313/posts/2023-01-onefileconfiguration/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-onefileconfiguration/</guid>
+      <guid>http://localhost:1313/posts/2023-01-onefileconfiguration/</guid>
       <description>Introduction This article describes my attempts to create a set of https://leanpub.com/lit-config/read. With each file containing all the settings and customizations I use for a machine in a single location.</description>
       
     </item>
     
     <item>
       <title>Diving into Emacs with EXWM</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/</link>
+      <link>http://localhost:1313/posts/2023-01-emacswithexwm/</link>
       <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/</guid>
+      <guid>http://localhost:1313/posts/2023-01-emacswithexwm/</guid>
       <description>Introduction In my experience, every hobby has a few core… disagreements. Usually these are small and relatively benign differences based on personal preference, with members of that community advocating for their prefered solution.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2023-01-emacswithexwm/featured.jpg" />
     </item>
     
     <item>
       <title>Using NixOS for Art</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-wacomonlinux/</link>
+      <link>http://localhost:1313/posts/2023-01-wacomonlinux/</link>
       <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-wacomonlinux/</guid>
+      <guid>http://localhost:1313/posts/2023-01-wacomonlinux/</guid>
       <description>TODO Art-180 With the start of the new year come New Years resolutions. This year mine is to start doing art on a regular basis. While I have some expirence with painting, my interest is sculpture.</description>
       
     </item>
     
     <item>
       <title>NixOS First Impressions</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-nixosfirstimpressions/</link>
+      <link>http://localhost:1313/posts/2023-01-nixosfirstimpressions/</link>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-nixosfirstimpressions/</guid>
+      <guid>http://localhost:1313/posts/2023-01-nixosfirstimpressions/</guid>
       <description>As someone who is still trying to break into the world of Linux Power Users, System Admins, and Programmers. I have often found myself needing to reinstall my operating system.</description>
       
     </item>
     
     <item>
       <title>A beginners doorway to Linux.</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-linuxjourney/</link>
+      <link>http://localhost:1313/posts/2023-01-linuxjourney/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-linuxjourney/</guid>
+      <guid>http://localhost:1313/posts/2023-01-linuxjourney/</guid>
       <description>Linux based operating systems, including Debian, Arch, and NixOS are being used by an increasing number of people without a technical background. These operating systems have a reputation of requiring a high level of knowledge simply to perform common user actions, making them somewhat unapproachable for the beginner.</description>
       
     </item>
     
     <item>
       <title>A Linux Journey Retrospective</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-linuxjourneyretrospective/</link>
+      <link>http://localhost:1313/posts/2023-01-linuxjourneyretrospective/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-linuxjourneyretrospective/</guid>
+      <guid>http://localhost:1313/posts/2023-01-linuxjourneyretrospective/</guid>
       <description>As a part of writing the &amp;#34;https://ironshark.org/technology/2022/09/04/linux-journey.html&amp;#34; article, and my larger project of switching to https://nixos.org/ for daily use. I decided to go through all of the https://linuxjourney.com/ lessons again.</description>
       
     </item>
     
     <item>
       <title>Who, what, and Why. Creating a personal blog.</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-whyblog/</link>
+      <link>http://localhost:1313/posts/2023-01-whyblog/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-whyblog/</guid>
+      <guid>http://localhost:1313/posts/2023-01-whyblog/</guid>
       <description>Personal blogging can take a lot of forms, and the goals for each site can vary wildly from person to person. For me, those goals are.
 Create a public facing outlet for written works.</description>
       

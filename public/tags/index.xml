@@ -2,148 +2,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on IronShark</title>
-    <link>https://IronShark-Studios.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Art_for_Beginners</title>
-      <link>https://IronShark-Studios.github.io/tags/art_for_beginners/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/art_for_beginners/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/art_for_beginners/</guid>
+      <guid>http://localhost:1313/tags/art_for_beginners/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Digital_Art,</title>
-      <link>https://IronShark-Studios.github.io/tags/digital_art/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/digital_art/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/digital_art/</guid>
+      <guid>http://localhost:1313/tags/digital_art/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://IronShark-Studios.github.io/tags/linux/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>NixOS,</title>
-      <link>https://IronShark-Studios.github.io/tags/nixos/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/nixos/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/nixos/</guid>
+      <guid>http://localhost:1313/tags/nixos/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>https://IronShark-Studios.github.io/tags/emacs/</link>
+      <link>http://localhost:1313/tags/emacs/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/emacs/</guid>
+      <guid>http://localhost:1313/tags/emacs/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux,</title>
-      <link>https://IronShark-Studios.github.io/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nix,</title>
-      <link>https://IronShark-Studios.github.io/tags/nix/</link>
+      <link>http://localhost:1313/tags/nix/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/nix/</guid>
+      <guid>http://localhost:1313/tags/nix/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Emacs,</title>
-      <link>https://IronShark-Studios.github.io/tags/emacs/</link>
+      <link>http://localhost:1313/tags/emacs/</link>
       <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/emacs/</guid>
+      <guid>http://localhost:1313/tags/emacs/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Keyboard_Centric_Workflow</title>
-      <link>https://IronShark-Studios.github.io/tags/keyboard_centric_workflow/</link>
+      <link>http://localhost:1313/tags/keyboard_centric_workflow/</link>
       <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/keyboard_centric_workflow/</guid>
+      <guid>http://localhost:1313/tags/keyboard_centric_workflow/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nix</title>
-      <link>https://IronShark-Studios.github.io/tags/nix/</link>
+      <link>http://localhost:1313/tags/nix/</link>
       <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/nix/</guid>
+      <guid>http://localhost:1313/tags/nix/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Functional</title>
-      <link>https://IronShark-Studios.github.io/tags/functional/</link>
+      <link>http://localhost:1313/tags/functional/</link>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/functional/</guid>
+      <guid>http://localhost:1313/tags/functional/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux_for_beginners,</title>
-      <link>https://IronShark-Studios.github.io/tags/linux_for_beginners/</link>
+      <link>http://localhost:1313/tags/linux_for_beginners/</link>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/linux_for_beginners/</guid>
+      <guid>http://localhost:1313/tags/linux_for_beginners/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Linux_for_beginners</title>
-      <link>https://IronShark-Studios.github.io/tags/linux_for_beginners/</link>
+      <link>http://localhost:1313/tags/linux_for_beginners/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/linux_for_beginners/</guid>
+      <guid>http://localhost:1313/tags/linux_for_beginners/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Site_Update</title>
-      <link>https://IronShark-Studios.github.io/tags/site_update/</link>
+      <link>http://localhost:1313/tags/site_update/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/tags/site_update/</guid>
+      <guid>http://localhost:1313/tags/site_update/</guid>
       <description></description>
       
     </item>

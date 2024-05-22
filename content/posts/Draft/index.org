@@ -1,0 +1,8 @@
+#+title: Draft Post
+#+date: 3000-01-01
+#+categories[]: Art
+#+tags[]: Digital_Art, Linux NixOS, Art_for_Beginners
+
+
+
+* Draft Post

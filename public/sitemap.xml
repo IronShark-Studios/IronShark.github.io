@@ -3,61 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</loc>
+    <loc>http://localhost:1313/posts/draft/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/2023-01-artonlinux/</loc>
     <lastmod>2023-01-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://IronShark-Studios.github.io/posts/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-onefileconfiguration/</loc>
+    <loc>http://localhost:1313/posts/2023-01-onefileconfiguration/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-emacswithexwm/</loc>
+    <loc>http://localhost:1313/posts/2023-01-emacswithexwm/</loc>
     <lastmod>2022-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-wacomonlinux/</loc>
+    <loc>http://localhost:1313/posts/2023-01-wacomonlinux/</loc>
     <lastmod>2022-12-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-nixosfirstimpressions/</loc>
+    <loc>http://localhost:1313/posts/2023-01-nixosfirstimpressions/</loc>
     <lastmod>2022-09-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-linuxjourney/</loc>
+    <loc>http://localhost:1313/posts/2023-01-linuxjourney/</loc>
     <lastmod>2022-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-linuxjourneyretrospective/</loc>
+    <loc>http://localhost:1313/posts/2023-01-linuxjourneyretrospective/</loc>
     <lastmod>2022-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://IronShark-Studios.github.io/posts/2023-01-whyblog/</loc>
+    <loc>http://localhost:1313/posts/2023-01-whyblog/</loc>
     <lastmod>2022-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

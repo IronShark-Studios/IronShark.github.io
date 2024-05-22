@@ -2,18 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Art_for_Beginners on IronShark</title>
-    <link>https://IronShark-Studios.github.io/tags/art_for_beginners/</link>
+    <link>http://localhost:1313/tags/art_for_beginners/</link>
     <description>Recent content in Art_for_Beginners on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://IronShark-Studios.github.io/tags/art_for_beginners/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/art_for_beginners/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
     <item>
       <title>Digital Art with NixOS</title>
-      <link>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</link>
+      <link>http://localhost:1313/posts/2023-01-artonlinux/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://IronShark-Studios.github.io/posts/2023-01-artonlinux/</guid>
+      <guid>http://localhost:1313/posts/2023-01-artonlinux/</guid>
       <description>TLDR This article describes how I have configured my Linux workstation using NixOS to learn the basics of digital art. Including installing Krita, and managing it&amp;#39;s config files. Configuring a user input devices, and managing completed projects with git.</description>
       
     </item>

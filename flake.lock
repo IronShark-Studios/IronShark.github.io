@@ -18,22 +18,6 @@
         "type": "github"
       }
     },
-    "hugo-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1715637919,
-        "narHash": "sha256-F9N5YHJoAHVIQS8Q3RYWHC6iS4LFCtkCZph4uZ9kza0=",
-        "owner": "nunocoracao",
-        "repo": "blowfish",
-        "rev": "18ac12ea3c54983784ab6febb503f420e0282846",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nunocoracao",
-        "repo": "blowfish",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1715653339,
@@ -53,7 +37,6 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "hugo-theme": "hugo-theme",
         "nixpkgs": "nixpkgs"
       }
     },
