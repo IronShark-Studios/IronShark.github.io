@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/posts/draft-drawabox-part-1/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/draft-art-resources/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/draft-blogflakification/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/draft-lfs-pt0/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</loc>
+    <lastmod>3000-01-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/draft/</loc>
     <lastmod>3000-01-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>

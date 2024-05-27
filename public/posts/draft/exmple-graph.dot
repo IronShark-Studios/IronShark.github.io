@@ -1,0 +1,11 @@
+digraph F {
+    test -> fmainarse -> execute;
+    main -> init;
+    main -> react;
+    execute -> make_string;
+    execute -> printf
+    init -> make_string;
+    main -> printf;
+    execute -> compare;
+    compare -> bit_test_2;
+}

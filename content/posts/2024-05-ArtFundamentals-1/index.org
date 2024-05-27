@@ -1,0 +1,50 @@
+#+title: Getting Started with Art : Foundations
+#+date: 2024-05-01
+#+categories[]: Art
+#+tags[]: Art_Basics, Illustration, Draw_A_Box
+#+series[]: Art_Fundamentals
+
+
+
+* First Post in a Series
+
+While I have been dabbling with various forms of art for a while, I recently started taking it a lot more seriously. This series is meant to document my progress both with specific mediums, and with art more generally.
+
+Below are the resources that I am going to use to build my foundational art skills. Each headline is a link. I will also briefly describe why I choose it and how I intend to incorporate it into my program. At the end I will give a general overview of how I hope things will progress.
+
+* [[https://drawabox.com/][Draw A Box]]
+[[./250.jpg]]
+
+A Completely free online course. That focuses on the fundamentals of draftsmanship, perspective, and construction. It has both an official, and community critique program.
+
+Out of all the resources in the "Foundations" phase. This is the keystone that everything else is built around, and it will continue to be the starting point for the planning of future phases. Only "The Natural Way to Draw" will have a comparable presence in the overall scheduling.
+
+It has a large and very active online community, and I have found it's official critiques to be extremely useful.
+
+* [[https://www.amazon.com/Natural-Way-Draw-Working-Study/dp/0395530075][The Natural Way to Draw]]
+[[./naturalWayToDraw.jpg]]
+
+A book originally written in the early 1900's, by [[https://www.wikiwand.com/en/Kimon_Nicola%C3%AFdes][Kimon Nicolaïdes]]. It was finished after their death, and has some weakness' because of that. But it is still widely accepted as an excellent resource for beginner artists. It focuses on observation, composition, and rendering.
+
+The main criticism that I have for this book is that it does a poor job of explaining the intent behind certain foundational exercises. That is largely why I added the next two books.
+
+My hope is that by loosely pairing this with Draw A Box. That I will get exposure to the full range of fundamental illustration skills, and since they are both organized as scheduled programs. It keeps things simple, and prevents decision paralysis.
+
+* [[https://www.drawright.com/][Drawing on the right side of the brain]]
+[[rightBrain.jpg]]
+
+This book is included almost entirely to make up for some of the weakness' of The Natural Way to Draw. Specifically I found it's explanation of contour and blind contour drawing to be super useful. I did'nt do any of the exercises. But I would highly suggest reading through the whole thing as preparatory work for The Natural Way to Draw.
+
+* [[https://www.amazon.com/Figure-Drawing-Invention-Michael-Hampton/dp/0615272819][Figure Drawing: Design and Invention]]
+[[figureDesign.jpg]]
+
+Similarly to Drawing on the right side of the brain this book mostly acts to shore up a weakness is explaining gesture drawing in The Natural Way to Draw. The first 50 or so pages offer an excellent guide to the intent behind gesture. Especially when combined with Michael Hampton's [[https://www.youtube.com/watch?v=sSzB3ESpfE0][online lecture]].
+
+Additionally the second half of the book. Where they break down individual pieces of human anatomy for construction techniques, will be used in conjunction with the Draw A Box Lessons on construction.
+
+* The Overall Timeline
+[[./timeLine.png]]
+
+The general plan is to start with the Draw A Box Lesson 0 reading, and then read "Figure Drawing: Design and Invention", and "Drawing on the right side of the brain" while completing Lesson 1. Before finally combining "The Natural Way to Draw" schedules 1 - 4 with the Draw A Box 250 Box Challenge, and Lesson 2.
+
+This is generally reflective of how I intend to build my study programming overall. With the core of the work being a combination of "Draw A Box", and "The Natural Way to Draw". With support given by additional resources based on the current focus.

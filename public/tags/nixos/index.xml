@@ -10,6 +10,46 @@
     <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nixos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft-art-resources/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-art-resources/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft-blogflakification/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-blogflakification/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
       <link>http://localhost:1313/posts/draft/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       

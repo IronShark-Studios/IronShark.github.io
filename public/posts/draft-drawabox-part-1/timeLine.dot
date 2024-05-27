@@ -1,0 +1,29 @@
+digraph {
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    label="Phase 0: Foundations"
+    labelloc="t"
+    bgcolor="slategrey"
+
+    subgraph cluster_0 {
+        node [style=filled];
+        "Draw A Box\nLesson 0" -> "Draw A Box\nLesson 1" -> "Draw A Box\n250 Box Challenge" -> "Draw A Box\nLesson 2";
+        label = "Primary";
+        color=green
+    }
+
+    subgraph cluster_1 {
+        node [style=filled];
+        "Drawing on the right\nside of the brain" -> "Figure Drawing\nDesign and Invention" -> "The Natural\nWay to Draw\n1 - 4";
+        label = "Secondary";
+        color=blue
+    }
+    Start -> "Draw A Box\nLesson 0";
+    Start -> "Drawing on the right\nside of the brain";
+    "Draw A Box\nLesson 2" -> "Phase 1:\nFundamentals of\nConstruction";
+    "The Natural\nWay to Draw\n1 - 4" -> "Phase 1:\nFundamentals of\nConstruction";
+
+    Start [shape=Mdiamond];
+    "Phase 1:\nFundamentals of\nConstruction" [shape=Msquare];
+ }
