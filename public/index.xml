@@ -20,11 +20,31 @@
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-250-boxes-later/</link>
+      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-250-boxes-later/</guid>
+      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
       <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
+      <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
+      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
+      <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>The Foundation. NixOS, and Hyprland.</title>
+      <link>http://localhost:1313/posts/2024-05-rethinkrefactorrebuild-1/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024-05-rethinkrefactorrebuild-1/</guid>
+      <description>Foreword Early last year I wrote a series of posts describing how I was using NixOS, and Emacs to configure my work computer. In it I described how I set up EXWM as my window manager, and my attempts to make it all consistent and reproducible.</description>
       
     </item>
     

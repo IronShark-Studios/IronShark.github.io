@@ -1,0 +1,32 @@
+#+title: The Foundation. NixOS, and Hyprland.
+#+date: 2024-05-31
+#+categories[]: Technology
+#+tags[]: NixOS, Personal_Configuration
+#+series[]: Rethink,Refactor,Rebuild.
+
+
+* Foreword
+Early last year I wrote a series of posts describing how I was using NixOS, and Emacs to configure my work computer. In it I described how I set up EXWM as my window manager, and my attempts to make it all consistent and reproducible. While I was largely successful at this, and the set up worked well overall. Ultimately I found it to be a bit to /fragile/ for everyday use.
+
+This series documents the changes I made to address these challenges.
+
+* The Issues
+So to address the elephant in the room first, why did I stop using EXWM? To put it simply my Emacs hacking skills aren't good enough to make it work comfortably, and the benifits I got from it didn't justify the problems it caused. I frequently had problems with key passthrough. Hanging due to Emacs being single threaded. Generally it made things feel a bit clumsier. There were deffinately benifits, and I glad I got took the time to learn how to use it. Since I will be using the parts I liked as a template for my configuration going forward. Namely, a unified set of bindings to control all of my frequently used apps.
+
+The other major change is the move away from a single Org-Mode based litterate configuration file. Again ultimately it just started to be unweildly to use. My configuration across NixOS and Emacs is several thousand lines long, and having all of that in a single file is ... not fun. Plus the switch to the "modular" style configuration makes managing multiple machines much easier.
+
+* Hyprland
+My reason for Wayland over X is basically just that I have struggled with screen tearing for a long time, and Wayland fixes that. It was incredibly easy to configure on NixOS, basically just requiring =programs.hyprland.enable = true;= be added to my =configuration.nix=.
+
+ This change /drastically/ reduced the complexity of both my NixOS and Emacs configuration, and generally. The only issue I have had with it is that Plover. A stenography program is not currently supporting Wayland. Configuration was handled using Nix Home-manager.
+
+* Rofi
+Rofi is a system application launcher, and is one of the main tools I am using to try and replicate the feel of EXWM. Generally it works well, with the only issue being that most plugins currently don't work with the Wayland version. But those were not part of my current core use case. So I'm happy to continue on without the for the moment, and follow up on those in a few months when things get patched.
+
+* New Keyboard Layout
+I also revamped my keyboard layout to use fewer layers. Instead relying on key chords, and moving the =x= key to be near the index finger instead of the pinky. Both these changes make things a lot smoother for me. Allowing me to access symbols with a single action, and reducing stress on my pinky from heavy Emacs use.
+
+* What's next?
+Short term the next 3 or so post will be covering. Shell Tools. Including DASH, ZSH, Alacritty, LF, and all the supporting applications to go along with them. Then the biggest part of this whole project will be totally rebuilding my Emacs configuration. The last step will be unify the theme's, and common input keys across all of the apps, and installing FFXIV.
+
+All of those will be in their own follow up posts in this series.

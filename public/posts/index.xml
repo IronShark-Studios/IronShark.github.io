@@ -7,33 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 May 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>250 Cubes Later</title>
-      <link>http://localhost:1313/posts/draft-drawabox-part-1/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      <title>The Foundation. NixOS, and Hyprland.</title>
+      <link>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</link>
+      <pubDate>Sat, 31 May 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-drawabox-part-1/</guid>
-      <description>First Post in a Series While I have been dabbling with various forms of art for a while, I recently started taking it a lot more seriously. This series is meant to document my progress both with specific mediums, and with art more generally.</description>
+      <guid>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</guid>
+      <description>Forward Early last year I wrote a series of posts describing how I was using NixOS, and Emacs to configure my work computer. In it I described how I set up EXWM as my window manager, and my attempts to make it all consistent and reproducible.</description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-art-resources/</link>
+      <link>http://localhost:1313/posts/00-draft-template/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-art-resources/</guid>
+      <guid>http://localhost:1313/posts/00-draft-template/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-blogflakification/</link>
+      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-blogflakification/</guid>
+      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
       <description> Draft Post </description>
       
     </item>
@@ -49,22 +49,12 @@
     </item>
     
     <item>
-      <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      <title>Getting Started with Art : Foundations</title>
+      <link>http://localhost:1313/posts/2024-05-artfundamentals-1/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</guid>
-      <description> Draft Post </description>
-      
-    </item>
-    
-    <item>
-      <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/draft/</guid>
-      <description> Draft Post </description>
+      <guid>http://localhost:1313/posts/2024-05-artfundamentals-1/</guid>
+      <description>First Post in a Series While I have been dabbling with various forms of art for a while, I recently started taking it a lot more seriously. This series is meant to document my progress both with specific mediums, and with art more generally.</description>
       
     </item>
     

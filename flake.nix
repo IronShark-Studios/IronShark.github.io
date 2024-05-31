@@ -32,7 +32,11 @@
                 pkgs.hugo
               ];
               shellHook = ''
-              '';
+                cd ~/Projects/Personal-Blog
+                hugo server -F &
+                firefox --new-window localhost:1313
+                cd ./content/posts
+             '';
             };
           }
       );

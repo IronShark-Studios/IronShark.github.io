@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 May 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Art_Fundamentals</title>
-      <link>http://localhost:1313/series/art_fundamentals/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      <title>Rethink,Refactor,Rebuild.</title>
+      <link>http://localhost:1313/series/rethinkrefactorrebuild./</link>
+      <pubDate>Sat, 31 May 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/series/art_fundamentals/</guid>
+      <guid>http://localhost:1313/series/rethinkrefactorrebuild./</guid>
       <description></description>
       
     </item>
@@ -24,6 +24,16 @@
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/series/example_series/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Art_Fundamentals</title>
+      <link>http://localhost:1313/series/art_fundamentals/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/series/art_fundamentals/</guid>
       <description></description>
       
     </item>
