@@ -3,3 +3,45 @@
 #+categories[]: Technology
 #+tags[]: NixOS, Personal_Configuration
 #+series[]: Rethink,Refactor,Rebuild.
+
+* Modernized CLI Tooling
+Below are brief summaries of the tools I have added to my shell. Each heading is a link to their source repo.
+
+There is always a risk of incompatibility when using more modern replacements for the classic core utils. With that being said. I am not a professional systems admin, or programmer. Or in any sort of IT professional. So I don't think there is any reason to be worried about getting used to using tools that may not exist on other systems.
+
+Realistically the closest I am going to get to system admin work will be a home lab, and it's fairly trivial to add these tools to any system managed with Nix. With that being said. I have tried to maintain the general workflows provided by the standard tools through alias'.
+
+*** [[https://github.com/ajeetdsouza/zoxide][*_Zoxide_*]]
+Billed as a smarter replacement for =CD=, zoxide makes jumping to frequently used  to directories a bit faster and easier with recency based filtering, and fuzzy matching. While not game changing on its own. When used in conjunction with some of the other tools. It makes a noticeable difference in jumping around the system.
+
+*** [[https://github.com/RsyncProject/rsync][*_R-Sync_*]]
+This is largely a drop in replacement of =cp= with the addition of a progress bar for larger files.
+
+*** [[https://github.com/sharkdp/bat/blob/master/README.md][*_BAT_*]]
+Prints the contents of a file in a pop up window, and support syntax highlighting. Similar to how =man= pages work. Used as a replacement for =cat=.
+
+*** [[https://github.com/andreafrancia/trash-cli][*_Trash-CLI_*]]  [[https://github.com/wertarbyte/coreutils/tree/master][*_Shred_*]]
+This replaces the normal =rm= command. Moves files into a temporary storage location. Allowing them to be restored. I have it configured so that the trash container empties itself on shutdown. I also added a alias to the =shred= utility to make it easier to use.
+
+*** [[https://github.com/eza-community/eza][*_EZA_*]]
+One of the larger upgrades. This is a /much/ more configurable version of the =ls= command. I have a total of four alias'. Each assigned to a slightly different output format.
+
+*** [[https://github.com/junegunn/fzf][*_FZF_*]]
+This tool adds fuzzy completion to other tools like =EZA=. And in conjunction with =Zsh= makes navigating much easier.
+
+*** [[https://github.com/BurntSushi/ripgrep][*_RipGrep_*]]  [[https://github.com/sharkdp/fd][*_FD_* ]]  [[test][*_Entr_*]]
+I have bundled there two together. As they are both new entries to me. Replacing =find=, and =grep=. Tools I have not used much previously.
+
+* ZSH and DASH.
+
+* Comparision of Alacritty and Emacs Terminal
+
+[[./images/ala-term.jpg]]
+
+[[./images/emacs-term.jpg]]
+
+
+
+*** LF and Dervish
+
+* Final Thoughts
