@@ -40,13 +40,13 @@
     
     <item>
       <title>The Shell.</title>
-      <link>http://localhost:1313/posts/2024-06f-rethinkrefactorrebuild-2/</link>
+      <link>http://localhost:1313/posts/2024-06-rethinkrefactorrebuild-2/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2024-06f-rethinkrefactorrebuild-2/</guid>
+      <guid>http://localhost:1313/posts/2024-06-rethinkrefactorrebuild-2/</guid>
       <description>Modernized CLI Tooling Below are brief summaries of the tools I have added to my shell. Each heading is a link to their source repo.
 There is always a risk of incompatibility when using more modern replacements for the classic core utils.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2024-06f-rethinkrefactorrebuild-2/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/2024-06-rethinkrefactorrebuild-2/featured.jpg" />
     </item>
     
     <item>
