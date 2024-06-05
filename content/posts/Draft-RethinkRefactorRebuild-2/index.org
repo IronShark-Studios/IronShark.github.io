@@ -20,28 +20,25 @@ This is largely a drop in replacement of =cp= with the addition of a progress ba
 *** [[https://github.com/sharkdp/bat/blob/master/README.md][*_BAT_*]]
 Prints the contents of a file in a pop up window, and support syntax highlighting. Similar to how =man= pages work. Used as a replacement for =cat=.
 
-*** [[https://github.com/andreafrancia/trash-cli][*_Trash-CLI_*]]  [[https://github.com/wertarbyte/coreutils/tree/master][*_Shred_*]]
+*** [[https://github.com/andreafrancia/trash-cli][*_Trash-CLI_*]] &  [[https://github.com/wertarbyte/coreutils/tree/master][*_Shred_*]]
 This replaces the normal =rm= command. Moves files into a temporary storage location. Allowing them to be restored. I have it configured so that the trash container empties itself on shutdown. I also added a alias to the =shred= utility to make it easier to use.
 
 *** [[https://github.com/eza-community/eza][*_EZA_*]]
-One of the larger upgrades. This is a /much/ more configurable version of the =ls= command. I have a total of four alias'. Each assigned to a slightly different output format.
+One of the larger upgrades. This is a /much/ more configurable version of the =ls= command. I have a total of four alias'. Each assigned to a slightly different output format. I /really/ like this in particular as =ls= is one of the most frequently used commands. The one complaint I have is that is seems to highlight files at random, and I wish I could disable that. Instead highlighting only directories.
 
 *** [[https://github.com/junegunn/fzf][*_FZF_*]]
-This tool adds fuzzy completion to other tools like =EZA=. And in conjunction with =Zsh= makes navigating much easier.
+This tool adds fuzzy completion to other tools like =EZA=. And in conjunction with =Zsh= makes navigating much easier. Can also be used with a =ZSH= plugin as a complete replacement for normal shell completion.
 
-*** [[https://github.com/BurntSushi/ripgrep][*_RipGrep_*]]  [[https://github.com/sharkdp/fd][*_FD_* ]]  [[test][*_Entr_*]]
-I have bundled there two together. As they are both new entries to me. Replacing =find=, and =grep=. Tools I have not used much previously.
+*** [[https://github.com/BurntSushi/ripgrep][*_RipGrep_*]],  [[https://github.com/sharkdp/fd][*_FD_*]], [[https://github.com/eradman/entr][*_Entr_*]]
+
+I have grouped these three tools together as they are wholly unfamiliar to me. With =FD= allowing me to search a directory for a specific file name. =RipGrep= allowing me to search a directories files for matching strings, and =Entr= running arbitrary commands anytime a specific file is changed.
 
 * ZSH and DASH.
+So to quickly get this out of the way. While I have installed it. I do not currently plan to switch to =DASH= for my primary system shell. I don't understand the risks of =BASH= incompatibility well enough to make that jump. Instead I am planning on using it to write, and test my own personal scripts against. Since =DASH= is fully interoperable with =BASH=.
 
-* Comparision of Alacritty and Emacs Terminal
-
-[[./images/ala-term.jpg]]
+=ZSH= on the other hand has been a massive change. The level of customization that seems to be common with it is awesome, and I have really been investing in making the it work the way that feels best for me. Below I have posted some screen shots of it in use.
 
 [[./images/emacs-term.jpg]]
 
-
-
-*** LF and Dervish
-
 * Final Thoughts
+While I still have a lot of work to do before I can consider this revision finalized. I am much happier with how things flow now. The next big step.... Rebuilding my Emacs config.

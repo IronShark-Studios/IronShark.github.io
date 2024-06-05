@@ -7,15 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Sat, 31 May 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Foundation. NixOS, and Hyprland.</title>
-      <link>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</link>
-      <pubDate>Sat, 31 May 3000 00:00:00 +0000</pubDate>
+      <title>250 Boxes Later</title>
+      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
+      <pubDate>Thu, 12 Jun 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-rethinkrefactorrebuild/</guid>
-      <description>Forward Early last year I wrote a series of posts describing how I was using NixOS, and Emacs to configure my work computer. In it I described how I set up EXWM as my window manager, and my attempts to make it all consistent and reproducible.</description>
+      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
+      <description> Draft Post </description>
       
+    </item>
+    
+    <item>
+      <title>The Shell.</title>
+      <link>http://localhost:1313/posts/draft-rethinkrefactorrebuild-2/</link>
+      <pubDate>Thu, 05 Jun 3000 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/draft-rethinkrefactorrebuild-2/</guid>
+      <description>Modernized CLI Tooling Below are brief summaries of the tools I have added to my shell. Each heading is a link to their source repo.
+There is always a risk of incompatibility when using more modern replacements for the classic core utils.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/draft-rethinkrefactorrebuild-2/featured.jpg" />
     </item>
     
     <item>
@@ -30,21 +41,21 @@
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
-      <description> Draft Post </description>
-      
-    </item>
-    
-    <item>
-      <title>Draft Post</title>
       <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
       <description> Draft Post </description>
+      
+    </item>
+    
+    <item>
+      <title>The Foundation. NixOS, and Hyprland.</title>
+      <link>http://localhost:1313/posts/2024-05-rethinkrefactorrebuild-1/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024-05-rethinkrefactorrebuild-1/</guid>
+      <description>Foreword Early last year I wrote a series of posts describing how I was using NixOS, and Emacs to configure my work computer. In it I described how I set up EXWM as my window manager, and my attempts to make it all consistent and reproducible.</description>
       
     </item>
     

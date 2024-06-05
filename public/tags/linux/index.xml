@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on IronShark</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>http://localhost:39665/tags/linux/</link>
     <description>Recent content in Linux on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:39665/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Draft Post</title>
-      <link>http://localhost:1313/posts/00-draft-template/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      <title>250 Boxes Later</title>
+      <link>http://localhost:39665/posts/draft-2024-06-250-boxes-later/</link>
+      <pubDate>Thu, 12 Jun 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/00-draft-template/</guid>
+      <guid>http://localhost:39665/posts/draft-2024-06-250-boxes-later/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
+      <link>http://localhost:39665/posts/00-draft-template/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
+      <guid>http://localhost:39665/posts/00-draft-template/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
+      <link>http://localhost:39665/posts/draft-lfs-pt0/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
+      <guid>http://localhost:39665/posts/draft-lfs-pt0/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Digital Art with NixOS</title>
-      <link>http://localhost:1313/posts/2023-01-artonlinux/</link>
+      <link>http://localhost:39665/posts/2023-01-artonlinux/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-artonlinux/</guid>
+      <guid>http://localhost:39665/posts/2023-01-artonlinux/</guid>
       <description>TLDR This article describes how I have configured my Linux workstation using NixOS to learn the basics of digital art. Including installing Krita, and managing it&amp;#39;s config files. Configuring a user input devices, and managing completed projects with git.</description>
       
     </item>
     
     <item>
       <title>A Linux Journey Retrospective</title>
-      <link>http://localhost:1313/posts/2023-01-linuxjourneyretrospective/</link>
+      <link>http://localhost:39665/posts/2023-01-linuxjourneyretrospective/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-linuxjourneyretrospective/</guid>
+      <guid>http://localhost:39665/posts/2023-01-linuxjourneyretrospective/</guid>
       <description>As a part of writing the &amp;#34;https://ironshark.org/technology/2022/09/04/linux-journey.html&amp;#34; article, and my larger project of switching to https://nixos.org/ for daily use. I decided to go through all of the https://linuxjourney.com/ lessons again.</description>
       
     </item>

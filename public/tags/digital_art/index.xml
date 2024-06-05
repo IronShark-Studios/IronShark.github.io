@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Digital_Art, on IronShark</title>
-    <link>http://localhost:1313/tags/digital_art/</link>
+    <link>http://localhost:39665/tags/digital_art/</link>
     <description>Recent content in Digital_Art, on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/digital_art/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Jun 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:39665/tags/digital_art/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Draft Post</title>
-      <link>http://localhost:1313/posts/00-draft-template/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
+      <title>250 Boxes Later</title>
+      <link>http://localhost:39665/posts/draft-2024-06-250-boxes-later/</link>
+      <pubDate>Thu, 12 Jun 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/00-draft-template/</guid>
+      <guid>http://localhost:39665/posts/draft-2024-06-250-boxes-later/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
+      <link>http://localhost:39665/posts/00-draft-template/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
+      <guid>http://localhost:39665/posts/00-draft-template/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
+      <link>http://localhost:39665/posts/draft-lfs-pt0/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
+      <guid>http://localhost:39665/posts/draft-lfs-pt0/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Digital Art with NixOS</title>
-      <link>http://localhost:1313/posts/2023-01-artonlinux/</link>
+      <link>http://localhost:39665/posts/2023-01-artonlinux/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-artonlinux/</guid>
+      <guid>http://localhost:39665/posts/2023-01-artonlinux/</guid>
       <description>TLDR This article describes how I have configured my Linux workstation using NixOS to learn the basics of digital art. Including installing Krita, and managing it&amp;#39;s config files. Configuring a user input devices, and managing completed projects with git.</description>
       
     </item>
     
     <item>
       <title>Using NixOS for Art</title>
-      <link>http://localhost:1313/posts/2023-01-wacomonlinux/</link>
+      <link>http://localhost:39665/posts/2023-01-wacomonlinux/</link>
       <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/2023-01-wacomonlinux/</guid>
+      <guid>http://localhost:39665/posts/2023-01-wacomonlinux/</guid>
       <description>TODO Art-180 With the start of the new year come New Years resolutions. This year mine is to start doing art on a regular basis. While I have some expirence with painting, my interest is sculpture.</description>
       
     </item>

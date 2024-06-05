@@ -2,38 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Example_Series on IronShark</title>
-    <link>http://localhost:1313/series/example_series/</link>
+    <link>http://localhost:39665/series/example_series/</link>
     <description>Recent content in Example_Series on IronShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Xin</copyright>
-    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/example_series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 3000 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:39665/series/example_series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/00-draft-template/</link>
+      <link>http://localhost:39665/posts/00-draft-template/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/00-draft-template/</guid>
+      <guid>http://localhost:39665/posts/00-draft-template/</guid>
       <description> Draft Post </description>
       
     </item>
     
     <item>
       <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</link>
+      <link>http://localhost:39665/posts/draft-lfs-pt0/</link>
       <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/draft-2024-06-250-boxes-later/</guid>
-      <description> Draft Post </description>
-      
-    </item>
-    
-    <item>
-      <title>Draft Post</title>
-      <link>http://localhost:1313/posts/draft-lfs-pt0/</link>
-      <pubDate>Wed, 01 Jan 3000 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/draft-lfs-pt0/</guid>
+      <guid>http://localhost:39665/posts/draft-lfs-pt0/</guid>
       <description> Draft Post </description>
       
     </item>
