@@ -1,0 +1,89 @@
+#+title: Spacemacs With NixOS
+#+date: 2024-06-12
+#+categories[]: Art
+#+tags[]: Digital_Art, Linux NixOS, Art_for_Beginners
+#+series[]: Example_Series
+
+
+
+* Why Spacemacs
+For those that don't know Spacemacs is a prebuilt Emacs configuration. After having used a self built emacs config for the past several months, I am switching over to using it to try and make use of the community knowledge. Rather than continuing to reinvent the wheel
+
+* Installation
+Unfortunately there is no current way of having Nix manage your Emacs packages while using Spacemacs, because it has its own installation and update process. It ignores the packages provided by the [[https://github.com/nix-community/emacs-overlay][*_nix hm emacs overlay_*]]. Unfortunately this means we lose both reproducibility, and generational rollbacks for the moment (more on that later).
+
+Initial install was done following the default installation instructions. I deleted my old =~/.config/emacs= and removed the relevant sections from my emacs home-manager file. Then added the new section installing Emacs without the home-manager overlay. Note that I am using the version meant for wayland. Make sure to replace =package= with the correct value for your system.
+
+
+#+begin_src nix
+programs.emacs = {
+  enable = true;
+  package = pkgs.emacs-unstable-pgtk;
+};
+
+
+#+end_src
+
+The  I cloned [[https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bspacemacs][*_Spacemacs_*]]  into my empty =~/.config/emacs=, and used =$ git checkout develop= to switch to the rolling release branch. I configured spacemacs for a Vim based Full installation. And then it installed its the necessary packages through Melpa.
+
+* Configuration
+Interestingly, from what I can tell. There is really only three "points of contact" between Spacemacs, and the user.
+
+- =~/.spacemacs= : This largely functions as my new =init.el=. Controlling which layers are enabled. With those layers controlling package installation and control. Since this file is created solely by the user, and not written to by Spacemacs, I am just going to move it into my =system configuration flake=, and then have Nix create a read only symlink to where Spacemacs expects it to be.
+
+- =~/.spacemacs.env= : Both =.spacemacs= and this file are automattically cereated, and need to be writeable by Emacs. Because of this rather than a normal read only symlink. I am going to be using a =outOfStoreSymlink=. These allow changes to be made to the file, by directly linking the target to the sourcs. Without going through the Nix store. When using these you must add the =--impure= argument to =nixos-rebuild=. Eg =sudo nixos-rebuild switch --impure --flake .#system-name=.
+
+  #+begin_src nix
+home.file = {
+  ".spacemacs" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
+  };
+  #+end_src
+
+
+  #+begin_src nix
+home.file = {
+  ".spacemacs.env" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
+  };
+};
+  #+end_src
+
+- =~/.config/emacs/private= : This file is a part of the default Spacemacs repository, and meant to hold any personal layers that are created. However unlike =.spacemacs= which was a single file. =private= will likely end up containing several sub-directories, each with multiple files. I could manually add all them to my =emacs.nix= in the same way as =.spacemacs=, but for now I am going to go with a simpler option and simply create a source folder in my =system flake=. The contents of which (when there are any), will automattically be symlinked into the right location. The only really notable thing about this code it the use of =recursive == true;=. Wich includes the file contents.
+
+#+begin_src nix
+home.file = {
+   "Personal-Layers" = {
+     target = ".config/emacs/private";
+     source = ./Personal-Layers;
+     recursive = true;
+   };
+ };
+#+end_src
+
+Ultimately the result of this is that =~/.config/emacs= does not contain any "lose-able" information. Instead having everything dropped in from outside sources.
+
+* Updates and Maintnance
+
+The last thing that needs to be taken care of is keeping the Emacs based packages up to date. Unfortunately I can't use Nix for this, and Spacemacs doesn't pin packages with releases. So at the moment there is no easy way for me to track or control package versions. With that in mind, I will have to take the rolling release approach and try to keep things as up to date as possible. Mostly by bundling =git pull= into my =rebuild= script for nixos. I have included the entire script for completeness.
+
+#+begin_src bash
+ #!/bin/sh
+
+ cd ~/.config/emacs
+ git pull
+ cd ~/Projects/Technonomicon
+
+ git add .
+ git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
+ sudo nix flake update
+ sudo nixos-rebuild switch --flake .#$HOSTNAME --upgrade
+ git add .
+ git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
+ git push
+#+end_src
+
+* Final Thoughts
+I /really/ want a Spacemacs overlay for Nix. No seriously, I do. Maybe at some point in the future I will get to a point where it might be reasonable to try and make one myself. Honestly my biggest complaint in that spacemacs writes the custom info to the ~.spacemacs~ file. I really wish that info went into a seperate file, though honestly this is just an extension of wanting things managed by Nix. Oh well. Generally I am really happy with the changes, and I'm already working on a follow up. Discussing moving my 2K line org config into a series or custom layers.
+
+Link to [[https://github.com/IronShark-Studios/Technonomicon][*_my confing_*]]

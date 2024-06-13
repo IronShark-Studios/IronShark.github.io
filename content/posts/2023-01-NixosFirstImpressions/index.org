@@ -2,6 +2,7 @@
 #+title: NixOS First Impressions
 #+categories[]: Technology
 #+tags[]: Linux_for_beginners, Linux, Functional Linux, Nix
+#+last-modified
 
 As someone who is still trying to break into the world of Linux Power Users, System Admins, and Programmers. I have often found myself needing to reinstall my operating system. Usually to reset dependencies broken by trying to install a new package, or otherwise change my system. This was slow, time consuming, and a deterrent to experimentation. NixOS offers a solution, functional package management.
 
@@ -13,4 +14,5 @@ Installation was extremely easy. They recently released a new GUI installer that
 
 Currently I am using Xmonad nested within XFCE4. A combination I would strongly recommend to any beginner considering switching to a tiling window manager for the first time. It is easily configurable in NixOS by adding a single line to your =/etc/nixos/configuration.nix= and then selecting the combination from the login greeter. In particular being able to use and learn Xmonads controls while still having the GUI configuration appletts for things like Wifi and sound makes life a lot easier. The only issue I have found is that you can not use the default =M-S-q (alt-shift-q)= to log out. As this will freeze your workspace, and require a hard reboot. I have linked my configuration file repository below.
 
+/test/
 Github Repository : https://github.com/Iron-Shark/Technonomicon

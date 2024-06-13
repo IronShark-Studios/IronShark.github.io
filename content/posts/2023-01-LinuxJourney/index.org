@@ -14,6 +14,7 @@ The other tool that really helped me was the website LinuxJourney.com . This sit
  The key was I didn't need any knowledge of these things prior to this to set it up. It can be overwhelming to a novice to be confronted with a new subject and get stuck in a loop of "if I want to learn this, then I need to learn that first". I will link the used guides below, but it was all extremely simple for a normal Windows user. I think the ability for a non-power user to follow simple guides to set something like this up, and be able to practice is what makes WSL such a great tool for people looking to learn more about Computer Science, Programming, or System Administration.
 
 
+-
 * Resources
 These are the resources I found most helpfull while going through this process.
 
