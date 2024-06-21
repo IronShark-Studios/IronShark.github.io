@@ -1,8 +1,8 @@
 #+title: Spacemacs With NixOS
 #+date: 2024-06-12
-#+categories[]: Art
-#+tags[]: Digital_Art, Linux NixOS, Art_for_Beginners
-#+series[]: Example_Series
+#+categories[]: Technology
+#+tags[]: Linux NixOS, Personal_Configuration
+#+series[]: Rethink,Refactor,Rebuild.
 
 
 

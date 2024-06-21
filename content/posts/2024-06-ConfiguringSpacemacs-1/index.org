@@ -1,0 +1,24 @@
+#+title: Batteries Included.
+#+date: 2024-06-19
+#+categories[]: Technology
+#+tags[]: Linux, Emacs, Spacemacs
+#+series[]: Configuring_Spacemacs
+
+
+* Spacemacs, an Emacs porcelain
+
+One thing that I wish I had considered sooner was the nature of Spacemacs. It is self described as an Emacs configuration template, but. I don't think that fully encompasses everything it does. I would actually say it better fits my understanding of what a porcelain is. Acting as a interpretive layer between the user and Emacs itself. This really showed it's self to me in two main ways. Firstly in configuring keybinding menus. Which I had previously done using the =Hydra= package, and font configuration. The latter of which I am still not fully satisfied with. I actually wound up fighting to try and get my previous hydra configurations to work before realizing that Spacemacs provides its own =spacemacs-transient-window= feature set. Which prevents the use of normal Hydra menus. I ran into a similar set of issues with configuring font and theme settings. Where configuration settings that worked previously with vanilla Emacs, either don't work at all. Or produce unexpected side effects.
+
+All of this is why I think Spacemacs is better described as a porcelain, rather than simply as a prebuilt configuration. It acts as an cleaner, and generally more pleasant to use covering to the same basic Emacs. While generally providing all of the same features, but. Some of those features will not be available in the same way, or my require different a completely different package to accomplish.
+
+* Conquering the 2K line monster
+
+One of, if not the main reason I went with Spacemacs over other options like *Doom* or *Scimacs* is ease of customization. Unlike (to my understanding) either of those two options. Spacemacs comes with a built in method of extending the pre-built configuration options in a modular way. These take the form of layers. In my case, I needed this to handle my Org-mode configuration. Which was around two thousand lines of code.
+
+This was part of a larger move away from singular monolithic config files, towards modular configurations. Layers allowed me to easily break my org config into parts, based roughly on main use. These parts are automatically loaded anytime Org-mode is initialized.
+
+* Done, but not Finished
+
+While my previous configuration is now fully converted to Spacemacs, and in a use-able state. I still would'nt consider it /done/. I am not really satisfied with my current syntax highlighting / theming, and I haven't been able to set org to use my preferred variable pitch font. Both of these are small issues relating to how Spacemacs interacts with normal Emacs.
+
+More importantly, I have the Emacs Daemon start on login. So for me, Spacemacs style lazy loading actually feels a lot slower. I have been thinking about if it is reasonable to create a "Daemon Module" that starts auto loading packages based on frequency / recency of use. Eg. Since I use Org-mode daily, as soon as the Daemon is done starting. It begins loading Org-mode followed by the next most used package set. Aborting that loading if I start a new frame. I think this would be a reasonable way to balance having my most used major modes pre-loaded for the majority of days when I don't need to start Emacs immediately on login, against fast start up on days that I do. I'll add it to my list of maybe useful ideas.
