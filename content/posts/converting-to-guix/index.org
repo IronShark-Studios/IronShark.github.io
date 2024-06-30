@@ -70,11 +70,13 @@ $ nano /etc/config.scm
 
 ;; Change following lines
 (use-modules (gnu))
+
 >  (use-modules (gnu) (nongnu packages linux))
 
 (operating-system
   (locale "en_US.utf8")
    .....)
+
 > (operating-system
      (kernel linux)
      (firmware (list linux-firmware))
@@ -87,8 +89,20 @@ $ sudo guix system reconfigure /etc/config.scm
 $ reboot
 
 ;; Switch to Hyprland
+$ nano /etc/configuration.scm
+
+(use-modules (gnu))
+(use-package-modules wm)
+
+(operating-system
+  ;; …
+  (packages (append (list hyprland)
+                    %base-packages)))
 
 ;; Install Single User Nix PKMG
+$ guix install curl
+$ $ bash <(curl -L https://nixos.org/nix/install) --daemon
+
 
 #+end_src
 
