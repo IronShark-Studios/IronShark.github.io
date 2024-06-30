@@ -1,0 +1,107 @@
+#+title: From Nix to Guix
+#+date: 2024-06-29
+#+categories[]: Technology
+#+tags[]: Linux, NixOS, Guix
+#+series[]: Personal_Configuration
+
+* Intro
+
+The post follows the conversion of my *personal system configuration* from *NixOS* to *GNU Guix*.
+
+* Foundational Knowledge: Guile Scheme
+
+ Despite having written a tremendous amount of lisp code at this point. I still lack a firm understanding of the principles that underpin Lisp code. Previous code has largely all been /very/ basic configuration scripting. Or copied, and occasionally modified templates. Guix, while well documented. Seems to expect a higher level of familiarity with programming. So I decided to take a weekend, and go through a few starter resources. The goal is to be able to read, and comprehend what code does with the help of documentation.
+
+All of the practice code for the following resources can be found [[https://github.com/IronShark-Studios/Programming-Basics/tree/main/Guile-Primers][*_HERE_*]].
+
+*** Resources
+
+- [[https://spritely.institute/static/papers/scheme-primer.html][*_Spritely Institute: A Scheme Primer_* ]]
+
+  I started with this, and it acted as a really good test of my lisp / Guile tooling. I stopped when I got to the section on recursion, as that will be better covered by other resources. Overall a quick, and well written "taste" of Scheme style Lisp. Focused on interacting with the REPL.
+
+- [[*_https://jeko.frama.io/_*][*_Scheme Hackers Handbook_*]]
+
+  This guide is much more focused on the practical aspects of using Guile. Focusing on setting up projects, testing, and major language features. Incidentally this is my first real exposure to "Test Driven Design", and at first pass I like it. It very much reminds me of Declarative programming. Which is always a good thing.
+
+* Getting Started with Guix
+
+For this portion I am going to try and get a "/minimum viable/" system configuration set up in a virtual machine. This consists of adding the [[https://gitlab.com/nonguix/nonguix][*_Non-Guix_*]] package channel, to support non-free firmware. Then installing [[https://hyprland.org/][*_Hyprland_*]] with Guix, before finally installing the [[https://nixos.org/][*_Nix Package Manager_*]] inside of Guix to temporarily manage my most needed programs while I fully migrate my configuration.
+
+
+#+begin_src scheme
+;; Lines beginning with '$' are shell commands.
+
+;; Print current channels list
+$ guix describe
+
+;; Create channels file
+$ mkdir -p ~/.config/guix
+$ touch ~/.config/guix/channels.scm
+
+## Add to channels.scm
+(cons* (channel
+            (name 'nonguix)
+              (url "https://gitlab.com/nonguix/nonguix")
+              (introduction
+               (make-channel-introduction
+                "897c1a470da759236cc11798f4e0a5f7d4d59fbc"
+                (openpgp-fingerprint
+                 "2A39 3FFF 68F4 EF7A 3D29  12AF 6F51 20A0 22FB B2D5"))))
+          (channel
+            (name 'rosenthal)
+              (url "https://codeberg.org/hako/rosenthal.git")
+              (branch "trunk")
+              (introduction
+               (make-channel-introduction
+                "7677db76330121a901604dfbad19077893865f35"
+                (openpgp-fingerprint
+                 "13E7 6CD6 E649 C28C 3385  4DF5 5E5A A665 6149 17F7"))))
+           %default-channels)
+
+;; Update Guix Package List
+$ guix pull
+
+;; Confirm Channel Status
+$ guix describe
+
+;; Install standard Linux Kernel
+$ nano /etc/config.scm
+
+;; Change following lines
+(use-modules (gnu))
+>  (use-modules (gnu) (nongnu packages linux))
+
+(operating-system
+  (locale "en_US.utf8")
+   .....)
+> (operating-system
+     (kernel linux)
+     (firmware (list linux-firmware))
+      (locale "en_US.utf8")
+       .....)
+
+$ guix pull
+$ guix upgrade
+$ sudo guix system reconfigure /etc/config.scm
+$ reboot
+
+;; Switch to Hyprland
+
+;; Install Single User Nix PKMG
+
+#+end_src
+
+*** Resources
+
+- [[https://guix.gnu.org/manual/en/html_node/][*_GNU Guix Refrence Manual_*]]
+
+- [[https://guix.gnu.org/cookbook/en/guix-cookbook.html][*_GNU Guix CookBook_*]]
+
+- [[https://www.gnu.org/software/guile/manual/html_node/index.html][*_GNU Guile Refrence Manual_*]]
+
+- [[https://www.youtube.com/@SystemCrafters][*_SystemCrafters Youtube Channel_*]]
+
+* Conclusions
+
+One thing I was not expecting was how much nicer the pre-made Spacemacs configuration would make doing this work. Turns out when you have someone who knows what they are doing glue the stuff together, it works much nicer. The integration between Emacs, Guile, and Gieser was really intuitive.

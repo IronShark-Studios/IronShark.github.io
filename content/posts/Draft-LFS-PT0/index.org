@@ -1,9 +1,110 @@
-#+title: Draft Post
-#+date: 3000-01-01
-#+categories[]: Art
-#+tags[]: Digital_Art, Linux NixOS, Art_for_Beginners
-#+series[]: Example_Series
+#+title: NixOS as a Virtualization Host
+#+date: 3000-06-26
+#+categories[]: Technology
+#+tags[]: Linux, NixOS, Linux_From_Scratch
+#+series[]: Linux_From_Scratch
 
 
+* Intro
 
-* Draft Post
+This is the first post in a series following my attempt to work through [[https://www.linuxfromscratch.org/][*_Linux From Scratch_*]]. I am using LFS as a structured way to learn several things. Including how to create isolated development environments. How to build executable binaries from source. How to manage dependencies, and generally how large software projects are organized.
+
+My understanding is that LFS should be particularly well suited to this, as it is explicitly made to be an educational tool. Assuming only basic understanding of UNIX style shell commands. I am also hoping that this will serve as a good primer to programming /related/ skills.
+
+So, to properly set expectations. I am an experienced Linux user, but have no experience with programming. I made the jump from Windows 10 to Debian about 5 years ago, and have been a full time Linux user since then. After about two years, I switched from [[https://www.debian.org/][*_Debian_*]], to [[https://nixos.org/][*_NixOS_*]]. I have a some experience with shell scripting, but only in the simplest of terms.
+
+So this may sound strange, but with the exception of some very basic fiddling with [[https://learn.microsoft.com/en-us/windows/wsl/about][*_WSL2_*]] right as I made the switch to Linux. I have never really messed with Virtual Machines. I know they are commonly used as /escape hatches/ from NixOS, or to try out new software in more classically configured distributions. I just never really found a need to use them. With that in mind this first post is covers two main topics. Firstly configuring NixOS to act as a hypervisor, and second. My experience installing and configuring an [[https://archlinux.org/][*_Arch Linux_*]] guest virtual machine.
+
+* Configuring Virtual Machine Manager on NixOS
+
+So the largest issue I had setting up NixOS as a hypervisor is most post end up talking about using NixOS as the guest, and not as the host. Ultimately I was able to find a reddit post that linked to this [[https://github.com/erictossell/nixflakes/blob/main/modules/virt/libvirt.nix][*_GitHub Repository_*]]. That included a complete configuration file to set up a =virt-manager= installation. After adding a slightly modified version of that file to my own configuration I encountered an issues with the =virt-manager= crashing on start up. I was able to track down fairly quickly that this was related to a missing =gtk= cursor, caused by me using =Wayland= instead of X-org.
+
+Once fully installed my Hypervisor related configuration consisted of the following.
+
+#+begin_src nix
+  home = {
+    pointerCursor = {
+        gtk.enable = true;
+        package = pkgs.vanilla-dmz;
+        name = "Vanilla-DMZ";
+    };
+};
+#+end_src
+
+Added temporarily to my =waybar.nix= file, until I re-organize the entire thing.
+
+#+begin_src nix
+
+Original file line number 	Diff line number 	Diff line change
+{ inputs, outputs, lib, config, pkgs, ... }: {
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemu = {
+        package = pkgs.qemu_kvm;
+        swtpm.enable = true;
+        ovmf.enable = true;
+        ovmf.packages = [ pkgs.OVMFFull.fd ];
+      };
+    };
+    spiceUSBRedirection.enable = true;
+  };
+  users.users.xin.extraGroups = [ "libvirtd" ];
+  environment.systemPackages = with pkgs; [
+    spice
+    spice-gtk
+    spice-protocol
+    virt-viewer
+  ];
+
+  programs.virt-manager.enable = true;
+  programs = {
+    virt-manager.enable = true;
+    dconf.enable = true;
+  };
+
+  home-manager.users.xin = {
+    dconf.settings = {
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = [ "qemu:///system" ];
+        uris = [ "qemu:///system" ];
+      };
+    };
+  };
+}
+#+end_src
+
+Added as a sub module to my workstation specific configuration. Until I can re-organize it as a shared module.
+
+* Arch Linux VM
+
+Use this as an oppourtunity to learn the basics of SSH.
+
+** Resources
+- https://www.youtube.com/watch?v=YC7NMbl4goo&list=WL&index=2
+-
+
+** Host Settings
+
+#+begin_src txt
+
+- 60Gb Storage
+- 5gm Ram
+- 4 cpu cores
+- EFI Boot
+#+end_src
+
+** Booting and enabling SSH
+
+#+begin_src txt
+
+$ ip addr
+
+$ systemctl start sshd
+
+$ passwd
+
+then use on home terminal
+$ ssh root@ip addr
+
+#+end_src
