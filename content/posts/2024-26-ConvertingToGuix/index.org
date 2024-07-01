@@ -56,7 +56,7 @@ $ touch ~/.config/guix/channels.scm
                (make-channel-introduction
                 "7677db76330121a901604dfbad19077893865f35"
                 (openpgp-fingerprint
-                 "13E7 6CD6 E649 C28C 3385  4DF5 5E5A A665 6149 17F7"))))
+                 "13E7 6CDa6 E649 C28C 3385  4DF5 5E5A A665 6149 17F7"))))
            %default-channels)
 
 ;; Update Guix Package List
@@ -118,4 +118,8 @@ $ $ bash <(curl -L https://nixos.org/nix/install) --daemon
 
 * Conclusions
 
-One thing I was not expecting was how much nicer the pre-made Spacemacs configuration would make doing this work. Turns out when you have someone who knows what they are doing glue the stuff together, it works much nicer. The integration between Emacs, Guile, and Gieser was really intuitive.
+So if you have made it this far, then this is probably going to be a bit of a twist. But, I didn't end up switching to Guix...
+
+After getting the basic system installed. I started looking for packages, and the general consensus that I came to. Was that your are kind of expected to build and package anything other than the core utils yourself, and Guix has tooling to make this extremely easy. There is even a fairly large culture of sharing "personal" package repos... But ultimately, as someone who is still "getting started" with programming and has no experience packaging software. This was too big of a jump for me.
+
+My plan now is to try Guix again after going through [[https://www.linuxfromscratch.org/][*_Linux From Scratch_*]].
